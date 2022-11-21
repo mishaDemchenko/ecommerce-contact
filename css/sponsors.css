@@ -1,0 +1,70 @@
+.sponsors {
+    margin-top: 103px;
+}
+.sponsors__container {
+    display: flex;
+    flex-direction: row;
+    gap: clamp(0.313rem, -2.914rem + 9.22vw, 4rem);
+}
+.sponsors-text-container {
+    margin-right: 160px;
+}
+.sponsors-text {
+    font-family: var(--thirdly-font);
+    color: var(--primary-color);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: 0.035em;
+    text-align: left;
+    width: 320px;
+}
+.sponsors-img {
+    display: flex;
+    flex-direction: row;
+    gap: clamp(0.125rem, -1.516rem + 4.69vw, 2rem);
+    align-items: center;
+}
+.webflow {
+    width: 120px;
+    height: 48px;
+    position: relative;
+    top: 0px;
+    animation: webflow 3s infinite;
+    transition: 0.5s;
+}
+.relume {
+    width: 140px;
+    height: 56px;
+    position: relative;
+    top: 0px;
+    animation: relume 3s infinite;
+    transition: 0.5s;  
+}
+/*-----------------------------------------------------*/
+@keyframes webflow {
+    0% { transform:translate(0,0) }
+    10% { transform:translate(0px,3px) }
+    20% { transform:translate(0,0) }
+    30% { transform:translate(0px,3px) }
+    40% { transform:translate(0,0) }
+    50% { transform:translate(0px,3px) }
+    60% { transform:translate(0,0) }
+    70% { transform:translate(0,3px) }
+    80% { transform:translate(0,0) }
+    90% { transform:translate(0,3px) }
+    100% { transform:translate(0,0) }
+}
+@keyframes relume {
+    0% { transform:translate(0,0) }
+    10% { transform:translate(0px,-3px) }
+    20% { transform:translate(0,0) }
+    30% { transform:translate(0px,-3px) }
+    40% { transform:translate(0,0) }
+    50% { transform:translate(0px,-3px) }
+    60% { transform:translate(0,0) }
+    70% { transform:translate(0,-3px) }
+    80% { transform:translate(0,0) }
+    90% { transform:translate(0,-3px) }
+    100% { transform:translate(0,0) }
+}

@@ -1,0 +1,117 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+
+article > * + * {
+  margin-top: 1em;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/*-----------------------------------------------------*/
+[class*="__container"] {
+    max-width: 1312px;
+    margin: 0 auto;
+    padding: 0 15px 0 15px;
+}
+/*-----------------------------------------------------*/
+.wrapper {
+    max-width: 100vw;
+    overflow: hidden;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.header {
+    width: 100%;
+    height: 72px;
+    background-color: #F6E6CD;
+}
+.footer {
+  margin-top: 0 auto;
+}
+* {
+  transition: 0.5s;
+}
+/*-----------------------------------------------------*/
+*::selection {
+  background-color: var(--secondary-color);
+}
+span,
+a,
+p,
+h1,h2,h3,
+h4,h5,h6,
+img {
+    transition: 0.5s;
+    color: var(--primary-color);
+}
+span:hover,
+p:hover,
+h1:hover,h2:hover,h3:hover,
+h4:hover,h5:hover,h6:hover,
+img:not(.star, .webflow, .relume):hover,
+a:not(.nav-link):hover {
+    transform: translate(0px, -2px);
+    transition: 0.5s;
+}
+/*-----------------------------------------------------*/

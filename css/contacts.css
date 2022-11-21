@@ -1,0 +1,55 @@
+.contacts {
+    margin-top: 112px;
+    margin-bottom: 112px;
+}
+.cards__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.card {
+    max-width: 304px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.card-img {
+    width: 48px;
+    height: 48px;
+}
+.card-text-container {
+    display: flex;
+    flex-direction: column;
+}
+.card-title {
+    font-family: var(--thirdly-font);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 0.035em;
+    text-align: left;
+}
+.card-text {
+    margin-top: 16px;
+    margin-bottom: 24px;
+    /*-----------------------------------------------------*/
+    font-family: var(--thirdly-font);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.035em;
+    text-align: left;
+}
+.card-link {
+    font-family: var(--thirdly-font);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.035em;
+    text-align: left;
+}
+.card-link:hover {
+    transform: translate(2px, 0);
+    color: var(--secondary-color);
+}

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/adaptive.css">
+    <link rel="stylesheet" href="css/root.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/sceleton.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/sponsors.css">
+    <link rel="stylesheet" href="css/contacts.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One:wght@400;500;700&display=swap" rel="stylesheet">
+    <!--  -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+    <!--  -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- smtp -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <nav class="nav">
+                <div class="nav__container">
+                    <div class="logo">
+                        <a href="https://mishademchenko.github.io/ecommerce-home/"><img src="./img/logo.svg" alt="Logo" class="img"/></a>
+                    </div>
+                    <div class="nav-links">
+                        <div class="links">
+                            <a href="https://mishademchenko.github.io/ecommerce-home/" class="nav-link link">Home</a>
+                            <a href="#" class="nav-link link">Product</a>
+                            <a href="https://mishademchenko.github.io/ecommerce-about/" class="nav-link link">About</a>
+                            <a href="https://mishademchenko.github.io/ecommerce-contact/" class="nav-link link">Contact</a>
+                            <div class="buttons">
+                                <button class="nav-button">Cart <span class="sp">0</span></button>
+                            </div>
+                        </div>
+                        <div class="burger">
+                            <span></span>
+                        </span>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="main">
+            <section class="contact">
+                <div class="contact__container">
+                    <div class="contact-form-container">
+                        <div class="contact-text">
+                            <h1 class="contact-title title">Contact us</h1>
+                            <p class="contact-text label">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+                        </div>
+                        <div class="contact-form">
+                            <form method="POST" class="form">
+                                <div class="name-container">
+                                    <label for="input-name" class="name">Name</label>
+                                    <input type="text" class="input-name input" required>
+                                </div>
+                                <div class="email-container">
+                                    <label for="input-email" class="email">Email</label>
+                                    <input type="text" class="input-email input" required>
+                                </div>
+                                <div class="message-container">
+                                    <label for="input-message" class="message">Message</label>
+                                    <textarea name="message" class="input-message input" placeholder="Type your message..." required></textarea>
+                                </div>
+                                <div class="accept-container">
+                                    <input type="checkbox" name="accept" class="input-accept" required>
+                                    <label for="input-accept" class="accept">I accept the Terms</label>
+                                </div>
+                                <button class="submit black-button">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="contact-img-container">
+                        <img src="./img/contact.jpg" alt="" class="contact-img img">
+                    </div>
+                </div>
+            </section>
+            <section class="sponsors">
+                <div class="sponsors__container">
+                    <div class="sponsors-text-container">
+                        <p class="sponsors-text">
+                            Trusted by the world's best companies [social proof to build credibility]
+                        </p>
+                        <!-- /.sponsors-text -->
+                    </div>
+                    <!-- /.sponsors-text-container -->
+                    <div class="sponsors-container">
+                        <div class="sponsors-img">
+                            <img src="./img/webflow.svg" alt="webflow" class="sponsor webflow">
+                            <img src="./img/relume.svg" alt="relume" class="sponsor relume">
+                            <img src="./img/webflow.svg" alt="webflow" class="sponsor webflow">
+                            <img src="./img/relume.svg" alt="relume" class="sponsor relume">
+                            <img src="./img/webflow.svg" alt="webflow" class="sponsor webflow">
+                        </div>
+                        <!-- /.sponsors-img -->
+                    </div>
+                    <!-- /.sponsors-container -->
+                </div>
+            </section>
+            <!-- /.sponsors -->
+            <section class="contacts">
+                <div class="contacts__container">
+                    <div class="cards__wrapper">
+                        <div class="card">
+                            <div class="card-img-container">
+                                <img src="./img/email.svg" alt="Email" class="card-img">
+                                <!-- /.card-img -->
+                            </div>
+                            <!-- /.card-img-container -->
+                            <div class="card-text-container">
+                                <h1 class="card-title">Email</h1>
+                                <!-- /.card-title text -->
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in ero.</p>
+                                <!-- /.card-text label -->
+                                <a href="#" class="card-link">hello@relume.io</a>
+                                <!-- /.card-link -->
+                            </div>
+                            <!-- /.card-text-container -->
+                        </div>
+                        <!-- /.card -->
+                        <div class="card">
+                            <div class="card-img-container">
+                                <img src="./img/chat.svg" alt="Email" class="card-img">
+                                <!-- /.card-img -->
+                            </div>
+                            <!-- /.card-img-container -->
+                            <div class="card-text-container">
+                                <h1 class="card-title">Live chat</h1>
+                                <!-- /.card-title text -->
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in ero.</p>
+                                <!-- /.card-text label -->
+                                <a href="#" class="card-link">Start new chat</a>
+                                <!-- /.card-link -->
+                            </div>
+                            <!-- /.card-text-container -->
+                        </div>
+                        <!-- /.card -->
+                        <div class="card">
+                            <div class="card-img-container">
+                                <img src="./img/phone.svg" alt="Email" class="card-img">
+                                <!-- /.card-img -->
+                            </div>
+                            <!-- /.card-img-container -->
+                            <div class="card-text-container">
+                                <h1 class="card-title">Phone</h1>
+                                <!-- /.card-title text -->
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in ero.</p>
+                                <!-- /.card-text label -->
+                                <a href="#" class="card-link">+1 (555) 000-0000</a>
+                                <!-- /.card-link -->
+                            </div>
+                            <!-- /.card-text-container -->
+                        </div>
+                        <!-- /.card -->
+                        <div class="card">
+                            <div class="card-img-container">
+                                <img src="./img/pin.svg" alt="Email" class="card-img">
+                                <!-- /.card-img -->
+                            </div>
+                            <!-- /.card-img-container -->
+                            <div class="card-text-container">
+                                <h1 class="card-title">Office</h1>
+                                <!-- /.card-title text -->
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in ero.</p>
+                                <!-- /.card-text label -->
+                                <a href="#" class="card-link">123 Sample St, Sydney NSW 2000 AU</a>
+                                <!-- /.card-link -->
+                            </div>
+                            <!-- /.card-text-container -->
+                        </div>
+                        <!-- /.card -->
+                    </div>
+                    <!-- /.cards__wrapper -->
+                </div>
+                <!-- /.contacts__container -->
+            </section>
+            <!-- /.contacts -->
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer-nav__container">
+                    <div class="footer-logo">
+                        <a href="https://mishademchenko.github.io/ecommerce-home/"><img src="./img/logo.svg" alt="" class="footer-img img"></a>
+                    </div>
+                    <div class="footer-links">
+                        <a href="#" class="footer-link nav-link">Home</a>
+                        <a href="#" class="footer-link nav-link">Products</a>
+                        <a href="#" class="footer-link nav-link">About</a>
+                        <a href="#" class="footer-link nav-link">Contact</a>
+                    </div>
+                </div>
+                <hr class="footer-hr">
+                <div class="footer-rights__container">
+                    <div class="footer-rights">
+                        <p class="rights">2022 Relume. All right reserved.</p>
+                        <div class="rights-nav-container">
+                            <a href="#" class="rights-nav nav-link">Privacy Policy</a>
+                            <a href="#" class="rights-nav nav-link">Terms of Service</a>
+                            <a href="#" class="rights-nav nav-link">Cookies Settings</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="./js/user.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
