@@ -8,20 +8,6 @@ burger.addEventListener('click', function () {
     body.classList.toggle('lock');
 });
 /*-----------------------------------------------------*/
-let info = new Userinfo();
-
-async function t1() {
-    console.log(info.previousSites());
-    console.log(info.browserInfo());
-    console.log(info.sizeScreen());
-    console.log(await info.position())
-    console.log(await info.battery());
-    console.log(await info.ip());
-}
-
-t1();
-/*-----------------------------------------------------*/
-// qqojbaotoyhobacx 555113
 const form = document.querySelector(".form");
 form.addEventListener("submit", e => {
   e.preventDefault();
@@ -52,9 +38,7 @@ function email(name, email, text){
 /*-----------------------------------------------------*/
 const accept = document.querySelector('.accept');
 const input = document.querySelector('.input-accept');
-const button = document.querySelector('.submit');
 
 input.addEventListener('click', function () {
     accept.classList.toggle('checked')
-    button.classList.toggle('sub-true')
 })

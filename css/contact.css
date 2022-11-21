@@ -138,10 +138,6 @@
 .checked {
     color: var(--primary-color);
 }
-.sub-true {
-    filter: blur(0) !important;
-    pointer-events: all !important;
-}
 .input-accept {
     height: 18px;
     width: 18px;
@@ -158,8 +154,6 @@
 .submit {
     height: 48px;
     width: 111px;
-    filter: blur(2px);
-    pointer-events: none;
 }
 .black-button {
     border-radius: 50px;
