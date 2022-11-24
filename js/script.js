@@ -7,34 +7,7 @@ burger.addEventListener('click', function () {
     link.classList.toggle('open');
     body.classList.toggle('lock');
 });
-/*-----------------------------------------------------*/
-const form = document.querySelector(".form");
-form.addEventListener("submit", e => {
-  e.preventDefault();
-  let name = document.querySelector(".input-name").value;
-  let email = document.querySelector(".input-email").value;
-  let text = document.querySelector('.input-message').value;
 
-  
-
-
-  document.querySelector(".form").reset();
-
-  email(name, email,text);
-})
-function email(name, email, text){
-    Email.send({
-        Host : "smtp.elasticemail.com",
-        Username : "elasticcontactpage@gmail.com",
-        Password : "760DCBC67FA9AA051C3F576DDCA4BEDACE21",
-        To : 'elasticcontactpage@gmail.com',
-        From : "elasticcontactpage@gmail.com",
-        Subject : name,
-        Body : email, text
-    }).then(
-      message => alert(message)
-    );
-}
 /*-----------------------------------------------------*/
 const accept = document.querySelector('.accept');
 const input = document.querySelector('.input-accept');
@@ -42,3 +15,25 @@ const input = document.querySelector('.input-accept');
 input.addEventListener('click', function () {
     accept.classList.toggle('checked')
 })
+/*-----------------------------------------------------*/
+function sendMail() {
+  let params = {
+    name: document.querySelector(".input-name").value,
+    email: document.querySelector(".input-email").value,
+    message: document.querySelector(".input-message").value,
+  };
+
+  const serviceID = "service_bco1i5m";
+  const templateID = "template_syavync";
+
+    emailjs.send(serviceID, templateID, params)
+    .then(res=>{
+        document.querySelector(".input-name").value = "";
+        document.querySelector(".input-email").value = "";
+        document.querySelector(".input-message").value = "";
+        console.log(res);
+        alert("Your message sent successfully!!")
+
+    })
+    .catch(err=>console.log(err));
+}
